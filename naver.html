@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<!-- id="abc_d" class="abcd" 순으로 작성
+class를 되도록 먼저 소비 -->
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>NAVER TEST</title>
+        <link rel="stylesheet" href="./naver.css">
+        <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+    </head>
+    <body>
+        <div id="z-fixed">
+            <a href="#" id="z-night">
+                <div id="z-night_img"></div>
+            </a>
+            <a href="#header_center" id="z-top">
+                <div id="z-top_img"></div>
+            </a>
+        </div>
+        <header> <!-- 가로 먼저 div 몇개인지 설정 -->
+            <div id="header_center"> <!-- 가로 가운데 정렬용 div -->
+                <div class="service_area">
+                    <a href="#" class="ntom">
+                        <span>네이버를 시작페이지로</span>
+                        <span class="main_img" id="ico_ntom"></span>
+                    </a>
+                    <i class="sa_bar"></i>
+                    <a href="#">
+                        <span class="blind">쥬니어네이버</span>
+                        <span class="main_img" id="ico_jrnaver"></span>
+                    </a>
+                    <a href="#">
+                        <span class="blind">해피빈</span>
+                        <span class="main_img" id="ico_happybin"></span>
+                    </a>
+                    <!-- 
+                        block : full of width in screen. 가로 100%를 차지 (div 기본 속성)
+                        inline : content part 만 차지 (span의 기본 속성)
+                        inline-block : height 값 지정 가능 (따로 지정?)
+                     -->
+                </div>
+                <div id="header_search">
+                    <a href="#" class="main_img" id="main_logo">
+                        <h1><span class="blind">네이버</span></h1>
+                        <!--Attribute Comments(속성 주석)-->
+                    </a>
+                        <!-- 검색창 -->
+                    <h2 class="blind">검색창</h2>
+                    <fieldset id="green_window">
+                        <legend class="blind">검색</legend>
+                        <input id="query" name="query" type="text" title="검색어 입력" maxlength="255" class="input_text" tabindex="1" autocomplete="off">
+                        <!-- placeholder="검색어를 입력해 주세요." 추가 가능 -->
+                        <!-- tabindex 란 탭을 눌렀을 때 나오는 순서(js에서 접근성 관련으로 배움) -->
+                            <!-- 한글입력기 -->
+                        <a href="#" class="btn_keyboard">
+                            <span class="blind">한글입력기</span>
+                            <span class="main_img" id="ico_keyboard"></span>
+                        </a>
+                            <!-- 자동완성레이어 -->
+                        <a href="#" class="btn_acl">
+                            <span class="blind">자동완성 레이어</span>
+                            <span class="main_img" id="ico_acl"></span>
+                        </a>
+                            <!-- 검색버튼 -->
+                        <button id="btn_submit">
+                            <span class="blind">검색</span>
+                            <span class="main_img" id="btn_submit_icon"></span>
+                        </button>
+                    </fieldset>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div id="nav_bg">
+                <div class="center_align">
+                    <ul> <!-- Unordered List -->
+                        <li><a href="#" id="nav_green_fst" ><span class="main_img" id="ico_mail"></span>메일</a></li><!-- List Item -->
+                        <li><a href="#" class="nav_green">카페</a></li>
+                        <li><a href="#" class="nav_green">블로그</a></li>
+                        <li><a href="#" class="nav_green">지식iN</a></li>
+                        <li><a href="#" class="nav_green">쇼핑</a></li>
+                        <li><a href="#" class="nav_green">Pay</a></li>
+                        <li><a href="#" class="nav_green"><span class="main_img" id="ico_tv"></span>TV</a></li>
+                        <li><a href="#" id="nav_black_fst">사전</a></li>
+                        <li><a href="#" class="nav_black">뉴스</a></li>
+                        <li><a href="#" class="nav_black">증권</a></li>
+                        <li><a href="#" class="nav_black">부동산</a></li>
+                        <li><a href="#" class="nav_black">지도</a></li>
+                        <li><a href="#" class="nav_black">영화</a></li>
+                        <li><a href="#" class="nav_black">VIBE</a></li>
+                        <li><a href="#" class="nav_black">책</a></li>
+                        <li><a href="#" class="nav_black">웹툰</a></li>
+                        <li><a href="#" id="nav_more">더보기</a><span class="main_img" id="ico_more"></span></li>
+                    </ul>
+                    <a href="#" id="nav_weather">
+                        <span class="blind">날씨</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div id="main_container" role="main">
+                <!-- z-index bottons 버튼들 -->
+                <div class="z-btn_helper">
+                    <a href="#" class="main_img" id="z-btn_01"></a>
+                    <a href="#" class="main_img" id="z-btn_02"></a>
+                    <a href="#" class="main_img" id="z-btn_03"></a>
+                    <a href="#" class="main_img" id="z-btn_04"></a>
+                </div>
+                <!-- main_left 메인_왼쪽 -->
+                <div class="main_style_01" id="main_column_left">
+                    <div class="main_style_02" id="main_ad_01" 
+                    onclick="location.href='https:www.worldvision.or.kr'">
+                        <span class="ad_line_t"></span>
+                        <span class="ad_line_r"></span>
+                        <span class="ad_line_b"></span>
+                        <span class="ad_line_l"></span>
+                        <h2 class="blind">광고</h2>
+                    </div>
+                    <div class="main_style_02" id="main_newsstand">
+                        <h2 class="blind">뉴스스탠드 헤더</h2>
+                        <div class="main_style_02" id="main_newsstand_ytn">
+                            <div id="issue_area">
+                                <a href="#" id="issue_01">
+                                    연합뉴스
+                                    <span class="main_img" id="ico_right"></span>
+                                </a>
+                                <a href="#" id="issue_content">늦은 '꽃샘추위' 내일·모레 아침 기온 뚝…"농작물 냉...</a>
+                            </div>
+                            <div id="direct_area">
+                                <a href="#" id="direct_01">네이버뉴스
+                                    <span id="ico_direct_01_dot"></span>
+                                </a>
+                                <a href="#" >연예</a>
+                                <a href="#" >스포츠</a>
+                                <a href="#" >경제</a>
+                            </div>
+                        </div>
+                        <div id="main_newsstand_title">
+                            <a href="#" id="title_01">
+                                <span class="main_img" id="ico_title_01_1"></span>
+                                <span>뉴스스탠드</span>
+                                <span class="main_img" id="ico_title_01_2"></span>
+                            </a>
+                            <div id="title_btn">
+                                <a href="#" id="title_btn_01">구독한 언론사</a>
+                                <a href="#">
+                                    <span id="title_btn_dot"></span>
+                                전체언론사
+                                </a>
+                            </div>
+                            <div id="title_btn_group">
+                                <a href="#">
+                                    <span class="main_img" id="ico_title_btn_group_01"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="main_img" id="ico_title_btn_group_02"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="main_img" id="ico_title_btn_group_03"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main_newsstand_logos_frame">
+                            <i id="line_to_right1"></i>
+                            <i id="line_to_right2"></i>
+                            <i id="line_to_right3"></i>
+                            <i id="line_to_right4"></i>
+                            <i id="line_to_right5"></i>
+                            <i id="line_to_bottom1"></i>
+                            <i id="line_to_bottom2"></i>
+                            <i id="line_to_bottom3"></i>
+                            <i id="line_to_bottom4"></i>
+                            <i id="line_to_bottom5"></i>
+                            <i id="line_to_bottom6"></i>
+                            <i id="line_to_bottom7"></i>
+                        </div>
+                        <div class="main_newsstand_logos">
+                            <a href="#" class="news_logos_area">
+                                <img src="image/맥스무비.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/프라임경제.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/맥스무비.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/프라임경제.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/맥스무비.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/프라임경제.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/맥스무비.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/프라임경제.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/맥스무비.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/프라임경제.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/맥스무비.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/프라임경제.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/맥스무비.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/프라임경제.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/맥스무비.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/프라임경제.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/맥스무비.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/프라임경제.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/맥스무비.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/프라임경제.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/맥스무비.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/프라임경제.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/맥스무비.png" height="20" class="news_logos" >
+                            </a>
+                            <a href="#" class="news_logos_area">
+                                <img src="image/프라임경제.png" height="20" class="news_logos" >
+                            </a>
+                        </div>
+                    </div>
+                    <!-- empty -->
+                    <div class="main_timestand">
+                        <div class="main_timestand_wrap">
+                            <div class="timestand_wrap_header">
+                                <div class="timestand_wrap_header_left">
+                                    <strong>오늘 읽을만한 글</strong>
+                                    <span>주제별로 분류된 다양한 글 모음</span>
+                                </div>
+                                <div class="timestand_wrap_header_right">
+                                    <span><b>1,789</b> 개의 글</span>
+                                    <i></i>
+                                    <a href="#">
+                                        <span>관심주제 설정</span>
+                                        <span class="main_img" id="ico_timestand_01"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="timestand_wrap_nav">
+                                <a href="#">JOB&</a>
+                                <a href="#">테크</a>
+                                <a href="#">여행+</a>
+                                <a href="#">과학</a>
+                                <a href="#">리빙</a>
+                                <a href="#">건강</a>
+                                <a href="#">비즈니스</a>
+                                <a href="#">연애·결혼</a>
+                            </div>
+                            <div class="timestand_wrap_story">
+                                <div class="timestand_wrap_topstory">
+                                    <a href="#" class="tsbox_large">
+                                        <div class="tsbox_large_upper">
+                                            <div class="tsbox_large_upper_frame">
+                                            </div>
+                                            <div class="tsbox_large_upper_img">
+                                            </div>
+                                        </div>
+                                        <div class="tsbox_large_info">
+                                            <em>나만 몰랐던, 나만 아는</em>
+                                            <strong>MS, 서피스 듀오2 출시한다... 힌지 업그레이드</strong>
+                                            <p>마이크로소프트(MS)의 폴더블폰, 서피스 듀오 두 번째 모델의 출시 관련 소식이 들려오고 있다. IT매체 Techradar, 톰스가이드 등 외신은 MS가 올가을 혹은 연말에 서피스 듀오2를 만나볼 수 있다고 보도했다.</p>
+                                            <span>테크플러스</span>
+                                        </div>
+                                    </a>
+                                    <div id="tsbox_list_right">
+                                        <ul id="tsbox_ul">
+                                            <li id="tsbox_li">
+                                                <a href="#" class="tsbox_thumb">
+                                                    <div class="tsbox_img" loading="lazy"></div>
+                                                    <span class="thumb_98"></span>
+                                                </a>
+                                                <a href="#" class="tsbox_info">
+                                                    <em>에디터 초이스</em>
+                                                    <strong>갤럭시 A12·A32·A42 스펙 비교해보니</strong>
+                                                    <span>들숨</span>
+                                                </a>
+                                            </li>
+                                            <li id="tsbox_li">
+                                                <a href="#" class="tsbox_thumb">
+                                                    <div class="tsbox_img" loading="lazy"></div>
+                                                    <span class="thumb_98"></span>
+                                                </a>
+                                                <a href="#" class="tsbox_info">
+                                                    <em>에디터 초이스</em>
+                                                    <strong>눈에 안 보이는 세균과의 전쟁…’살균’ 방식에는 어떤 것이 있나?</strong>
+                                                    <span>테크플러스</span>
+                                                </a>
+                                            </li>
+                                            <li id="tsbox_li">
+                                                <a href="#" class="tsbox_thumb">
+                                                    <div class="tsbox_img" loading="lazy"></div>
+                                                    <span class="thumb_98"></span>
+                                                </a>
+                                                <a href="#" class="tsbox_info">
+                                                    <em>나는 크리에이터</em>
+                                                    <strong>ISO는 무엇이고, 어떤 필름을 써야할까?
+                                                    </strong>
+                                                    <span>필르미온</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="ts_01" class="timestand_wrap_story_bottom">
+                                    <ul id="ts01box_ul">
+                                        <li id="ts01box_li">
+                                            <a href="#" class="ts01box_thumb">
+                                                <div class="ts01box_img" loading="lazy"></div>
+                                                <span class="thumb_170"></span>
+                                            </a>
+                                            <a href="#" id="ts01box_info">
+                                                <em>테크</em>
+                                                <strong>올해 출시한 스마트폰만 8대...엉망진창 삼성 라인업</strong>
+                                                <p>갤럭시 S21 시리즈, 갤럭시 A42 5G·A52·A52 5G·A72·A02S…삼성전자가 올 상반기에 출시한 스마트폰들이다. 벌써 8개나 된다. 하반기에는 FE 모델과 Z 폴드 및 플립 시리즈를 공개할 예정이며, 그 외 새로운 모델이 출시될 가능성이 높다. ​IT 매체 톰스 가이드는 삼성이 너무 많은 시리즈를 출시하고 있다면서 “라인업이 엉망진창이 됐다”라
+                                                </p>                                               
+                                                <div id="ts01box_span">
+                                                    <span>테크플러스</span>
+                                                    <span id="info_time">· 어제</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li id="ts01box_li">
+                                            <a href="#" class="ts01box_thumb">
+                                                <div class="ts01box_img" loading="lazy"></div>
+                                                <span class="thumb_170"></span>
+                                            </a>
+                                            <a href="#" id="ts01box_info">
+                                                <em>테크</em>
+                                                <strong>10기가 속도 논란, 인터넷 속도 확인하는 방법?</strong>
+                                                <p>안녕하세요!​오늘은 인터넷 속도 측정하는 방법에 대해 알려드리고자 합니다.​오늘 좀 해당 이슈로 핫했었는데요 ​유튜브 구독자 100만명이 넘는 한 유튜버가 KT 10기가 인터넷 속도에 대해 저격을 하며,​크게 이슈가 번졌습니다.​내일 KT 가 어떻게 대응할지 궁금해지네요 ㅋㅋ​KT를 저격했지만 인터넷 문제는 이동통신사 전체적으로 문제가 있습니다.​어떤 문제
+                                                </p>
+                                                <div id="ts01box_span">
+                                                    <span>변가</span>
+                                                    <span id="info_time">· 어제</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li id="ts01box_li">
+                                            <a href="#" class="ts01box_thumb">
+                                                <div class="ts01box_img" loading="lazy"></div>
+                                                <span class="thumb_170"></span>
+                                            </a>
+                                            <a href="#" id="ts01box_info">
+                                                <em>테크</em>
+                                                <strong>애플워치 QR 체크인 가능! 네이버 앱 업데이트, 앱에서 흔들어도 가능!</strong>
+                                                <p>요즘 어딘가 방문할 때 꼭 필요한 것 중에 하나가 바로 방문 기록을 남기는 것입니다. 다양한 방법이 있지만 그중 개인정보 노출 위험을 줄일 수 있는 전자출입명부 QR 체크인을 사용하시는 분들이 많으시죠? 그리고 일부 애플워치 유저분들은 단축어를 등록해서 애플워치에서도 이 기능을 사용하고 계실 것 같습니다. 특히 저처럼 애플워치 셀룰러 모델을 사용하시는 분들
+                                                </p>
+                                                <div id="ts01box_span">
+                                                    <span>이퓨</span>
+                                                    <span id="info_time">· 4일 전</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li id="ts01box_li">
+                                            <a href="#" class="ts01box_thumb">
+                                                <div class="ts01box_img" loading="lazy"></div>
+                                                <span class="thumb_170"></span>
+                                            </a>
+                                            <a href="#" id="ts01box_info">
+                                                <em>테크</em>
+                                                <strong>삼성도 OTT 합류? 삼성 TV 플러스 모바일에서 무료로 즐긴다</strong>
+                                                <p>안녕하세요.삼성스마트폰카페(삼공스)입니다.KOREA SAMSUNG Smartphone Community삼성전자는 자사 스마트 TV를 통해 선보였던 '삼성 TV 플러스' 서비스를 모비일용 앱으로 출시했습니다.삼성 TV 플러스는 영화·예능·뉴스·스포츠·어린이 등 다양한 콘텐츠를 무료로 즐길 수 있는 채널형 비디오 서비스로 지난 2015년 처음으로 선보였습니다.
+                                                </p>
+                                                <div id="ts01box_span">
+                                                    <span>삼성스마트폰카페</span>
+                                                    <span id="info_time">· 어제</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="ts_02" class="timestand_wrap_story_bottom">
+                                    <ul id="ts01box_ul">
+                                        <li id="ts01box_li">
+                                            <a href="#" class="ts01box_thumb">
+                                                <div class="ts01box_img" loading="lazy"></div>
+                                                <span class="thumb_170"></span>
+                                            </a>
+                                            <a href="#" id="ts01box_info">
+                                                <em>테크</em>
+                                                <strong>전화기와 계산기, 숫자 배열이 다른 이유는?</strong>
+                                                <p>전화기의 숫자키는 1부터 시작하는데,왜 계산기는 거꾸로일까?왜 컴퓨터 키보드는 계산기와 같은 배열일까?왜 전화기는 1부터 시작하는데,계산기는 7부터 시작할까?컴퓨터 키보드는 왜 9부터 시작하지?​이런 생각을 한번쯤 해 보셨을 겁니다.​무심결에 그냥 지나칠수도 있는사소한 숫자배열 원리와 그 이유.​어쩌면 이유조차도 사소할 지 모르지만,은근히 이유가 있게 만들
+                                                </p>
+                                                <div id="ts01box_span">
+                                                    <span>사진수집가</span>
+                                                    <span id="info_time">· 어제</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li id="ts01box_li">
+                                            <a href="#" class="ts01box_thumb">
+                                                <div class="ts01box_img" loading="lazy"></div>
+                                                <span class="thumb_170"></span>
+                                            </a>
+                                            <a href="#" id="ts01box_info">
+                                                <em>테크</em>
+                                                <strong>무인매장, 도난 위험 없나?</strong>
+                                                <p>더현대 서울에 위치한 무인매장 '언커먼스토어' 입장 전 앱으로 사용할 신용카드 등록...물건 들고 나오면 자동 결제 40여 대 AI카메라와 150여 개 무게감지 센서 등 첨단 IT 기술 총집합 앱 설치와 제휴가 안 된 카드사 등 불편함 존재 더현대 서울이 층고 높아 무인매장 운영 수월(영상=이하나 기자)언커먼스토어. 더현대 서울 6층에 위치한
+                                                </p>
+                                                <div id="ts01box_span">
+                                                    <span>AI타임스</span>
+                                                    <span id="info_time">· 3일 전</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li id="ts01box_li">
+                                            <a href="#" class="ts01box_thumb">
+                                                <div class="ts01box_img" loading="lazy"></div>
+                                                <span class="thumb_170"></span>
+                                            </a>
+                                            <a href="#" id="ts01box_info">
+                                                <em>테크</em>
+                                                <strong>소니 엑스페리아 1 III 공개 앞서 디자인과 스펙 유출됐다</strong>
+                                                <p>엑스페리아 1 시리즈는 소니의 플래그십 스마트폰 라인업이다. 매년 최고 수준의 사양을 갖추고 출시되며, 소니 오디오 및 영상 관련 기술을 탑재해 멀티미디어를 즐기기에 좋다. 올해도 어김없이 신제품이 등장할 예정이다. 브랜드의 얼굴과도 같은 플래그십 제품의 출시 소식인 만큼 많은 관심이 모이고 있는데, 소니 엑스페리아 1 III의 공개를 앞두고 상세한 디자인
+                                                </p>
+                                                <div id="ts01box_span">
+                                                    <span>리뷰플러스</span>
+                                                    <span id="info_time">· 4일 전</span>
+                                                </div>
+                                                
+                                            </a>
+                                        </li>
+                                        <li id="ts01box_li">
+                                            <a href="#" class="ts01box_thumb">
+                                                <div class="ts01box_img" loading="lazy"></div>
+                                                <span class="thumb_170"></span>
+                                            </a>
+                                            <a href="#" id="ts01box_info">
+                                                <em>테크</em>
+                                                <strong>디즈니는 지금 스타워즈 광선검 개발 중</strong>
+                                                <p>​영화 스타워즈를 좋아하지 않아도 '라이트 세이버'를 모르는 사람은 거의 없다. 라이트 세이버는 스타워즈에 등장하는 가공의 무기로 흔히 광선검으로 부른다. 평소 손잡이만 들고 다니다가 전원을 켜면 플라즈마로 이뤄진 칼날이 나타난다. 날은 영롱하게 빛난다.​광선검의 위력을 아는 사람이라면 하나쯤 가지고 싶다는 생각도 해봤을 것이다. 이런 마음을 겨냥한...
+                                                </p>
+                                                <div id="ts01box_span">
+                                                    <span>테크플러스</span>
+                                                    <span id="info_time">· 6일 전</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p id="techplus">
+                                    테크 판의 컨텐츠는 <a href="#">㈜테크플러스</a>에 의해 운영·편집 됩니다.
+                                </p>
+                                <div id="ts_more_button">
+                                    <button type="button" id="more_button">
+                                        <i id="ico_more_button" class="main_img"></i>
+                                        새로운 글 더보기
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- main_right 메인_오른쪽 -->
+                <div class="main_style_01" id="main_column_right">
+                    <div class="main_style_02" id="main_r1_login">
+                        <h2 class="blind">로그인</h2>
+                        <p id="r1_loginmsg">
+                            네이버를 더 안전하고 편리하게 이용하세요
+                        </p>
+                        <a href="#" id="r1_loginbox">
+                            <i id="ico_r1_login" class="main_img"></i>로그인
+                            <!-- 띄우면 inline-block 간의 간격 발생 -->
+                        </a>
+                        <div id="r1_sub">
+                            <div id="r1_sub_look_box">
+                                <i id="ico_r1_sub_rocker" class="main_img"></i>
+                                <a href="#" id="r1_look_id">아이디</a>
+                                <span id="r1_small_dot"></span>
+                                <a href="#" id="r1_look_pw">비밀번호찾기</a>
+                            </div>
+                            <a id="r1_join_box">
+                                <i id="ico_r1_join" class="main02_img"></i>
+                                회원가입
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main_style_02" id="main_r2_card_01">
+                        <img src="image/r2.png">
+                        <div id="r2_btn_box">
+                            <a href="#" id="r2_prev">
+                                <i id="r2_ico_prev" class="main02_img"></i>
+                                <span class="blind">이전</span>
+                            </a>
+                            <a href="#" id="r2_next">
+                                <i id="r2_ico_next" class="main02_img"></i>
+                                <span class="blind">다음</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main_style_02" id="main_r3_ad_02">
+                        <a href="#">
+                            <div id="ad_02_frame"></div>
+                            <div id="ad_02"></div>
+                        </a>
+                    </div>
+                    <div id="main_r4_shopcast">
+                        <div id="r4_header">
+                            <a href="#" id="r4_header_left">
+                                <h1>트렌드쇼핑</h1>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">상품</a>
+                                </li>
+                                <li>
+                                    <a href="#">쇼핑몰</a>
+                                </li>
+                                <li>
+                                    <a href="#">MEN</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="r4_main">
+                            <div id="r4_mall">
+                                <span class="blind">몰 바로가기</span>
+                                <div class="r4_mall_area">
+                                    <a href="#"><strong>G마켓</strong></a>
+                                    <span class="r4_dot1"></span>
+                                    <a href="#">옥션</a>
+                                    <span class="r4_dot1"></span>
+                                    <a href="#">11번가</a>
+                                    <span class="r4_dot1"></span>
+                                    <a href="#"><strong>이마트몰</strong></a>
+                                    <span class="r4_dot1"></span>
+                                    <a href="#">티몬</a>
+                                    <span class="r4_dot1"></span>
+                                    <a href="#">위메프</a>
+                                </div>
+                                <div class="r4_mall_area">
+                                    <a href="#">쿠팡</a>
+                                    <span class="r4_dot2"></span>
+                                    <a href="#"><strong>신세계몰</strong></a>
+                                    <span class="r4_dot2"></span>
+                                    <a href="#">올리브영</a>
+                                    <span class="r4_dot2"></span>
+                                    <a href="#">GS샵</a>
+                                    <span class="r4_dot2"></span>
+                                    <a href="#">롯데i몰</a>
+                                    <span class="r4_dot2"></span>
+                                    <a href="#"><strong>CJmall</strong></a>
+                                </div>
+                            </div>
+                            <div id="r4_goods">
+                                <div class="r4_shop_control">
+                                    <div class="r4_num_box">
+                                        <em>
+                                            <span class="blind">현재</span>
+                                            1
+                                        </em>
+                                        <span>
+                                            <span class="blind">전체</span>
+                                            / 18
+                                        </span>
+                                    </div>
+                                    <div class="r4_btn_box">
+                                        <a href="#" role="button" id="r4_btn_prev">
+                                            <span class="blind">이전</span>
+                                        </a>
+                                        <a href="#" role="button" id="r4_btn_next">
+                                            <span class="blind">다음</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="r4_list">
+                                    <ul id="r4_goods_ul">
+                                        <li id="r4_goods_li">
+                                            <a href="#" class="goods_area">
+                                                <div class="r4_thumb_box">
+                                                    <div class="goods_img"></div>
+                                                    <div class="goods_img_frame"></div>
+                                                </div>
+                                                <p class="r4_title_box">
+                                                    <span>재택근무 필수템</span>
+                                                    <span>리퍼브 초특가</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li id="r4_goods_li">
+                                            <a href="#" class="goods_area">
+                                                <div class="r4_thumb_box">
+                                                    <div class="goods_img"></div>
+                                                    <div class="goods_img_frame"></div>
+                                                </div>
+                                                <p class="r4_title_box">
+                                                    <span>고양이들이 좋아해</span>
+                                                    <span>캣잎33%특가</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li id="r4_goods_li">
+                                            <a href="#" class="goods_area">
+                                                <div class="r4_thumb_box">
+                                                    <div class="goods_img"></div>
+                                                    <div class="goods_img_frame"></div>
+                                                </div>
+                                                <p class="r4_title_box">
+                                                    <span>휴양지 느낌 물씬</span>
+                                                    <span>카페트 44% 특가</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li id="r4_goods_li">
+                                            <a href="#" class="goods_area">
+                                                <div class="r4_thumb_box">
+                                                    <div class="goods_img"></div>
+                                                    <div class="goods_img_frame"></div>
+                                                </div>
+                                                <p class="r4_title_box">
+                                                    <span>조카선물로 딱</span>
+                                                    <span>마침 64% 할인중</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li id="r4_goods_li">
+                                            <a href="#" class="goods_area">
+                                                <div class="r4_thumb_box">
+                                                    <div class="goods_img"></div>
+                                                    <div class="goods_img_frame"></div>
+                                                </div>
+                                                <p class="r4_title_box">
+                                                    <span>맛있는 다이어트</span>
+                                                    <span>신제품 34% 할인</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li id="r4_goods_li">
+                                            <a href="#" class="goods_area">
+                                                <div class="r4_thumb_box">
+                                                    <div class="goods_img"></div>
+                                                    <div class="goods_img_frame"></div>
+                                                </div>
+                                                <p class="r4_title_box">
+                                                    <span>재택근무 필수템</span>
+                                                    <span>리퍼브 초특가</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li id="r4_goods_li">
+                                            <a href="#" class="goods_area">
+                                                <div class="r4_thumb_box">
+                                                    <div class="goods_img"></div>
+                                                    <div class="goods_img_frame"></div>
+                                                </div>
+                                                <p class="r4_title_box">
+                                                    <span>고양이들이 좋아해</span>
+                                                    <span>캣잎33%특가</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li id="r4_goods_li">
+                                            <a href="#" class="goods_area">
+                                                <div class="r4_thumb_box">
+                                                    <div class="goods_img"></div>
+                                                    <div class="goods_img_frame"></div>
+                                                </div>
+                                                <p class="r4_title_box">
+                                                    <span>휴양지 느낌 물씬</span>
+                                                    <span>카페트 44% 특가</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li id="r4_goods_li">
+                                            <a href="#" class="goods_area">
+                                                <div class="r4_thumb_box">
+                                                    <div class="goods_img"></div>
+                                                    <div class="goods_img_frame"></div>
+                                                </div>
+                                                <p class="r4_title_box">
+                                                    <span>조카선물로 딱</span>
+                                                    <span>마침 64% 할인중</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li id="r4_goods_li">
+                                            <a href="#" class="goods_area">
+                                                <div class="r4_thumb_box">
+                                                    <div class="goods_img"></div>
+                                                    <div class="goods_img_frame"></div>
+                                                </div>
+                                                <p class="r4_title_box">
+                                                    <span>맛있는 다이어트</span>
+                                                    <span>신제품 34% 할인</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li id="r4_goods_li">
+                                            <a href="#" class="goods_area">
+                                                <div class="r4_thumb_box">
+                                                    <div class="goods_img"></div>
+                                                    <div class="goods_img_frame"></div>
+                                                </div>
+                                                <p class="r4_title_box">
+                                                    <span>재택근무 필수템</span>
+                                                    <span>리퍼브 초특가</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li id="r4_goods_li">
+                                            <a href="#" class="goods_area">
+                                                <div class="r4_thumb_box">
+                                                    <div class="goods_img"></div>
+                                                    <div class="goods_img_frame"></div>
+                                                </div>
+                                                <p class="r4_title_box">
+                                                    <span>고양이들이 좋아해</span>
+                                                    <span>캣잎33%특가</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li id="r4_goods_li">
+                                            <a href="#" class="goods_area">
+                                                <div class="r4_thumb_box">
+                                                    <div class="goods_img"></div>
+                                                    <div class="goods_img_frame"></div>
+                                                </div>
+                                                <p class="r4_title_box">
+                                                    <span>휴양지 느낌 물씬</span>
+                                                    <span>카페트 44% 특가</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li id="r4_goods_li">
+                                            <a href="#" class="goods_area">
+                                                <div class="r4_thumb_box">
+                                                    <div class="goods_img"></div>
+                                                    <div class="goods_img_frame"></div>
+                                                </div>
+                                                <p class="r4_title_box">
+                                                    <span>조카선물로 딱</span>
+                                                    <span>마침 64% 할인중</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li id="r4_goods_li">
+                                            <a href="#" class="goods_area">
+                                                <div class="r4_thumb_box">
+                                                    <div class="goods_img"></div>
+                                                    <div class="goods_img_frame"></div>
+                                                </div>
+                                                <p class="r4_title_box">
+                                                    <span>맛있는 다이어트</span>
+                                                    <span>신제품 34% 할인</span>
+                                                </p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="r4_shop_page">
+                                    <div id="r4_shop_page_center">
+                                        <a href="#" role="button" id="r4_btn_prev">
+                                            <span class="blind">이전</span>
+                                        </a>
+                                        <div id="r4_num_box_bottom" class="r4_num_box">
+                                            <em>
+                                                <span class="blind">현재</span>
+                                                1
+                                            </em>
+                                            <span>
+                                                <span class="blind">전체</span>
+                                                / 18
+                                            </span>
+                                        </div>
+                                        <a href="#" role="button" id="r4_btn_next">
+                                            <span class="blind">다음</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="r4_events">
+                                <div id="r4_events_header">
+                                    <strong>반갑다! 쇼핑뉴스</strong>
+                                    <div class="r4_shop_control">
+                                        <div class="r4_num_box">
+                                            <em>
+                                                <span class="blind">현재</span>
+                                                1
+                                            </em>
+                                            <span>
+                                                <span class="blind">전체</span>
+                                                / 4
+                                            </span>
+                                        </div>
+                                        <div class="r4_btn_box">
+                                            <a href="#" role="button" id="r4_btn_prev">
+                                                <span class="blind">이전</span>
+                                            </a>
+                                            <a href="#" role="button" id="r4_btn_next">
+                                                <span class="blind">다음</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul id="r4_events_ul">
+                                    <li id="r4_events_li">
+                                        <a href="#">
+                                            <em>농림부 x aT</em>
+                                            <span>랜선 로컬</span>
+                                            <span>맛집 투어</span>
+                                        </a>
+                                    </li>
+                                    <li id="r4_events_li">
+                                        <a href="#">
+                                            <em>와이제이바스켓</em>
+                                            <span>코멕스아이스박스</span>
+                                            <span>최대 87%세일</span>
+                                        </a>
+                                    </li>
+                                    <li id="r4_events_li">
+                                        <a href="#">
+                                            <em>트라이엑시트</em>
+                                            <span>캠핑트렌디 아이템</span>
+                                            <span>17% 할인</span>
+                                        </a>
+                                    </li>
+                                    <li id="r4_events_li">
+                                        <a href="#">
+                                            <em>우드버리</em>
+                                            <span>화사하게 밝히는</span>
+                                            <span>수분광쿠션 70%↓</span>
+                                        </a>
+                                    </li>
+                                    <li id="r4_events_li">
+                                        <a href="#">
+                                            <em>울산상회</em>
+                                            <span>울산경제진흥원</span>
+                                            <span>중소기업상품추천</span>
+                                        </a>
+                                    </li>
+                                    <li id="r4_events_li">
+                                        <a href="#">
+                                            <em>메이뜰</em>
+                                            <span>최대70%세일</span>
+                                            <span>옷장에 스며든 봄</span>
+                                        </a>
+                                    </li>
+                                    <li id="r4_events_li">
+                                        <a href="#">
+                                            <em>경기행복샵</em>
+                                            <span>경기테크노파크와</span>
+                                            <span>중소기업착한소비</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="r5_plus">
+                                <div id="r5_header">
+                                    <a href="#">패션</a>
+                                    <a href="#">라이프</a>
+                                    <a href="#">뷰티</a>
+                                    <a href="#">디지털･레저</a>
+                                </div>
+                                <div class="r4_shop_control">
+                                    <div class="r4_num_box">
+                                        <em>
+                                            <span class="blind">현재</span>
+                                            1
+                                        </em>
+                                        <span>
+                                            <span class="blind">전체</span>
+                                            / 10
+                                        </span>
+                                    </div>
+                                    <div class="r4_btn_box">
+                                        <a href="#" role="button" id="r4_btn_prev">
+                                            <span class="blind">이전</span>
+                                        </a>
+                                        <a href="#" role="button" id="r4_btn_next">
+                                            <span class="blind">다음</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="r5_goods_wrap">
+                                    <ul id="r5_ul">
+                                        <li id="r5_li">
+                                            <a href="#">
+                                                <div id="r5_thumb_box">
+                                                    <div id="r5_img"></div>
+                                                    <div id="r5_frame"></div>
+                                                </div>
+                                                <div id="r5_title">
+                                                    <span>스토조 한정판매 1+1</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li id="r5_li">
+                                            <a href="#">
+                                                <div id="r5_thumb_box">
+                                                    <div id="r5_img"></div>
+                                                    <div id="r5_frame"></div>
+                                                </div>
+                                                <div id="r5_title">
+                                                    <span>무무즈 베이직 티셔츠</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footer_inner">
+                <div id="f_banner_area">
+                    <div id="f_banner_01">
+                        <a href="#" id="f_banner_a">
+                            <div class="f_banner_img_area">
+                                <div class="f_banner_img"></div>
+                            </div>
+                            <div class="f_banner_info_area">
+                                <em>한국어/영어 개인정보 교육</em>
+                                <strong>어린이 개인정보보호 교육</strong>
+                                <span>6~7세 어린이와 부모가</span>
+                                <span>알아야 할 개인정보보호</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="f_banner_02">
+                        <a href="#" id="f_banner_a">
+                            <div class="f_banner_img_area">
+                                <div class="f_banner_img"></div>
+                            </div>
+                            <div class="f_banner_info_area">
+                                <em>제2벤처붐 챌린지라고?</em>
+                                <strong>4월15일~5월7일</strong>
+                                <span>벤처붐 경제재도약 응원하면</span>
+                                <span>경품이 펑펑~</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="f_banner_03">
+                        <a href="#" id="f_banner_a">
+                            <div class="f_banner_img_area">
+                                <div class="f_banner_img"></div>
+                            </div>
+                            <div class="f_banner_info_area">
+                                <em>해피빈 가볼까</em>
+                                <strong>슬기로운 제주 공정여행</strong>
+                                <span>최대 40% 할인받고</span>
+                                <span>Npay포인트 적립까지!</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="f_notice_area" class="f_234">
+                    <div>
+                        <a href="#"><span>공지사항</span></a>
+                        <a href="#"><span>서비스 전체보기</span></a>
+                    </div>
+                </div>
+                <div id="f_aside_area" class="f_234">
+                    <div id="f_partners_area">
+                        <div id="f_partners_list">
+                            <h3>Creators</h3>
+                            <a href="#" class="f_partners">크리에이터</a>
+                            <a href="#" class="f_partners">스몰비즈니스</a>
+                        </div>
+                        <div id="f_partners_list">
+                            <h3>Partners</h3>
+                            <a href="#" class="f_partners">비즈니스 · 광고</a>
+                            <a href="#" class="f_partners">스토어 개설</a>
+                            <a href="#" class="f_partners">지역업체 등록</a>
+                            <a href="#" class="f_partners">엑스퍼트 등록</a>
+                        </div>
+                        <div id="f_partners_list">
+                            <h3>Developers</h3>
+                            <a href="#" class="f_partners">네이버 개발자 센터</a>
+                            <a href="#" class="f_partners">오픈 API</a>
+                            <a href="#" class="f_partners">오픈소스</a>
+                            <a href="#" class="f_partners">네이버 D2</a>
+                            <a href="#" class="f_partners">네이버 D2SF</a>
+                            <a href="#" class="f_partners">네이버 랩스</a>
+                        </div>
+                    </div>
+                    <div id="f_project_area">
+                        <div class="f_project_box">
+                            <a href="#">
+                                <div class="f_project_sub">
+                                    <h4>웨일 브라우저</h4>
+                                    <span>다운받기</span>
+                                </div>
+                                <div class="f_project_img">
+                                    <img src="image/fp01.png" width="48px" height="48px">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="f_project_box">
+                            <a href="#">
+                                <div class="f_project_sub">
+                                    <h4>프로젝트 꽃</h4>
+                                    <span>바로가기</span>
+                                </div>
+                                <div class="f_project_img">
+                                    <img src="image/fp02.png" width="48px" height="48px">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="f_corp_area" class="f_234">
+                    <div>
+                        <a href="#" class="f_corp_item">회사소개</a>
+                        <a href="#" class="f_corp_item">인재채용</a>
+                        <a href="#" class="f_corp_item">제휴제안</a>
+                        <a href="#" class="f_corp_item">이용약관</a>
+                        <a href="#" class="f_corp_item"><b>개인정보처리방침</b></a>
+                        <a href="#" class="f_corp_item">청소년보호정책</a>
+                        <a href="#" class="f_corp_item">네이버 정책</a>
+                        <a href="#" class="f_corp_item">고객센터</a>
+                        <a href="#"><strong>ⓒ NAVER Corp.</strong></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
